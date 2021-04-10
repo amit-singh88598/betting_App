@@ -26,6 +26,7 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import {
+  AccountBalance,
   AssistantPhoto,
   CloudUpload,
   ExitToApp,
@@ -151,6 +152,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 5,
   },
 }));
+
 export default function Header(props) {
   const classes = useStyles();
   const theme = useTheme();
@@ -205,7 +207,7 @@ export default function Header(props) {
       onClose={handleMobileMenuClose}
       TransitionComponent={Fade}
       transitionDuration={500}
-      style={{ marginTop: 30 }}
+      style={{ marginTop: 30, marginLeft: 15 }}
     >
       <div style={{ textAlign: "center", margin: 20 }}>
         <Typography variant="h6" spacing={2}>
@@ -214,6 +216,128 @@ export default function Header(props) {
       </div>
       <Divider />
       {/* {props.menuOption.map((item, index) => ( */}
+      <MenuItem onClick={() => router.push("#")}>
+        <AccountBalance style={{ marginRight: 10 }} />
+        <Typography variant="subtitle2">{"Balance Information"}</Typography>
+      </MenuItem>
+      <div>
+        <div
+          style={{
+            margin: 5,
+            display: "flex",
+          }}
+        >
+          <Typography
+            style={{
+              fontWeight: 600,
+              fontSize: "0.8em",
+              marginLeft: 10,
+            }}
+          >
+            Available Credit :
+          </Typography>
+
+          <div
+            style={{
+              marginLeft: "auto",
+            }}
+          >
+            <div
+              style={{
+                marginRight: 5,
+                color: "#40c965",
+              }}
+            >
+              <Typography>81.21</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          style={{
+            margin: 5,
+            display: "flex",
+          }}
+        >
+          <Typography
+            style={{
+              fontWeight: 600,
+              fontSize: "0.8em",
+              marginLeft: 10,
+            }}
+          >
+            Credit Limit:
+          </Typography>
+
+          <div
+            style={{
+              marginLeft: "auto",
+            }}
+          >
+            <div style={{ marginRight: 5, color: "#40c965" }}>
+              <Typography>5,000.00</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          style={{
+            margin: 5,
+            display: "flex",
+          }}
+        >
+          <Typography
+            style={{
+              fontWeight: 600,
+              fontSize: "0.8em",
+              marginLeft: 10,
+            }}
+          >
+            Winnings :
+          </Typography>
+
+          <div
+            style={{
+              marginLeft: "auto",
+            }}
+          >
+            <div style={{ marginRight: 5, color: "#40c965" }}>
+              <Typography>-4,918.00</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div
+          style={{
+            margin: 5,
+            display: "flex",
+          }}
+        >
+          <Typography
+            style={{
+              fontWeight: 600,
+              fontSize: "0.8em",
+              marginLeft: 10,
+            }}
+          >
+            Net Exposure :
+          </Typography>
+
+          <div
+            style={{
+              marginLeft: "auto",
+            }}
+          >
+            <div style={{ marginRight: 5, color: "#40c965" }}>
+              <Typography>0.00</Typography>
+            </div>
+          </div>
+        </div>
+      </div>
       <MenuItem onClick={() => router.push("#")}>
         <ViewList style={{ marginRight: 10 }} />
         <Typography variant="subtitle2">{"Open Bets"}</Typography>
@@ -233,6 +357,10 @@ export default function Header(props) {
       <MenuItem onClick={() => router.push("#")}>
         <Visibility style={{ marginRight: 10 }} />
         <Typography variant="subtitle2">{"Market Result"}</Typography>
+      </MenuItem>
+      <MenuItem onClick={() => router.push("#")}>
+        <ListAlt style={{ marginRight: 10 }} />
+        <Typography variant="subtitle2">{"Rules & Regulations"}</Typography>
       </MenuItem>
       {/* ))} */}
 

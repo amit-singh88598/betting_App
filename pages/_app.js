@@ -35,41 +35,6 @@ const customBreakpointValues = {
 };
 const breakpoints = createBreakpoints({ ...customBreakpointValues });
 
-// const theme = createMuiTheme({
-//   palette: {
-//     primary: {
-//       main: "#000000", // Black ( Header )
-//       light: "#403D3D", // Dark Grey
-//       background: "#9c0609", // Blue
-//       grey: "#edeff2", //Light Grey
-//     },
-//     secondary: {
-//       main: "#ffffff", // White
-//       light: "#656565", // Green Color
-//       grey: "#403e3e", // darkGrey
-//       background: "#dfe4eb", //Light Grey
-//     },
-//   },
-//   typography: {
-//     h1: {
-//       fontFamily: "Work Sans",
-//       fontWeight: 500,
-//       fontSize: "2.2em",
-//     },
-//     body2: {
-//       fontFamily: "ABeeZee",
-//       fontSize: 16,
-//     },
-//     subtitle1: {
-//       fontFamily: '"Hind Madurai"',
-//       fontWeight: 300,
-//       [breakpoints.down("sm")]: {
-//         fontSize: 14,
-//       },
-//     },
-//   },
-// });
-
 function MyApp({ Component, pageProps }) {
   const classes = useStyles();
   const [darkMode, setDarkMode] = useState(false);
@@ -78,7 +43,7 @@ function MyApp({ Component, pageProps }) {
     palette: {
       type: darkMode ? "dark" : "light",
       primary: {
-        main: "#6a6c6e", // Black ( Header )
+        main: "#6a6c6e", // Grey ( Header )
         light: "#404040", // Dark Grey
         background: "#9c0609", // Blue
         grey: "#edeff2", //Light Grey
