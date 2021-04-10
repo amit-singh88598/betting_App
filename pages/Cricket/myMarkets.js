@@ -1,15 +1,15 @@
 import React from "react";
-import CricketNews from "../../Components/cricket/cricketNews";
+import MyMarket from "../../Components/cricket/myMarket";
 import Header from "../../Layouts/header";
 
-function News(props) {
+function MyMarkets(props) {
   return (
     <div>
       <Header>
-        <CricketNews />
+        <MyMarket />
       </Header>
     </div>
   );
 }
 
-export default News;
+export default MyMarkets;

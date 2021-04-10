@@ -1,7 +1,6 @@
 import { Card, Link, makeStyles, Typography } from "@material-ui/core";
 import { useRouter } from "next/router";
 import React from "react";
-import Market from "./market";
 
 const useStyle = makeStyles((theme) => ({
   cardStyle: {
@@ -12,7 +11,7 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
-function MatchLiveDetail(props) {
+function CricketOpenBets(props) {
   const classes = useStyle();
   const router = useRouter();
   return (
@@ -37,7 +36,7 @@ function MatchLiveDetail(props) {
               marginLeft: 10,
               color: "#c8dbd8",
             }}
-            onClick={() => router.push("/Cricket/matchLiveDetails")}
+            onClick={() => router.push("/Cricket/market")}
           >
             MARKET
           </Link>
@@ -92,9 +91,8 @@ function MatchLiveDetail(props) {
           marginTop: 10,
         }}
       ></div>
-      <Market />
     </div>
   );
 }
 
-export default MatchLiveDetail;
+export default CricketOpenBets;

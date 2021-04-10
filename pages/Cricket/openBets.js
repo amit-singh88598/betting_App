@@ -1,10 +1,13 @@
-import { Typography } from "@material-ui/core";
 import React from "react";
+import CricketOpenBets from "../../Components/cricket/cricketOpenBets";
+import Header from "../../Layouts/header";
 
 function OpenBets(props) {
   return (
     <div>
-      <Typography>Open bets</Typography>
+      <Header>
+        <CricketOpenBets />
+      </Header>
     </div>
   );
 }

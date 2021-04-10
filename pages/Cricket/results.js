@@ -1,10 +1,13 @@
-import { Typography } from "@material-ui/core";
 import React from "react";
+import CricketResults from "../../Components/cricket/cricketResults";
+import Header from "../../Layouts/header";
 
 function Results(props) {
   return (
     <div>
-      <Typography>Results</Typography>
+      <Header>
+        <CricketResults />
+      </Header>
     </div>
   );
 }
