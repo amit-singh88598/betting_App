@@ -19,7 +19,14 @@ import {
 } from "@material-ui/core";
 import { Height } from "@material-ui/icons";
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  btnStyle: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
+    width: 100,
+    float: "right",
+  },
+}));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -239,9 +246,28 @@ export default function Match2Odds() {
               </Button>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <Button fullWidth variant="contained" color="primary">
-                Place Bet
-              </Button>
+              <Card className={classes.btnStyle}>
+                <Typography
+                  style={{
+                    fontSize: "0.8em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Place Bet
+                </Typography>
+                <Typography
+                  style={{
+                    fontSize: "0.7em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Profit : 0.00
+                </Typography>
+              </Card>
             </Grid>
           </Grid>
           <div style={{ display: "flex" }}>
@@ -341,9 +367,28 @@ export default function Match2Odds() {
               </Button>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <Button fullWidth variant="contained" color="primary">
-                Place Bet
-              </Button>
+              <Card className={classes.btnStyle}>
+                <Typography
+                  style={{
+                    fontSize: "0.8em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Place Bet
+                </Typography>
+                <Typography
+                  style={{
+                    fontSize: "0.7em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Liability : 0.00
+                </Typography>
+              </Card>
             </Grid>
           </Grid>
           <div style={{ display: "flex" }}>

@@ -14,6 +14,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
   },
+  backColor: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
+  },
 
   //   Live Score Style
 
@@ -54,9 +58,13 @@ const useStyles = makeStyles((theme) => ({
   //   scoreCard Style
 
   scoreCard: {
-    backgroundColor: theme.palette.secondary.background,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.secondary.main,
     padding: 5,
+  },
+  scoreCardStyle: {
+    height: 150,
+    backgroundColor: theme.palette.primary.main,
   },
 }));
 
@@ -117,8 +125,18 @@ export default function LiveScore() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Live Score" {...a11yProps(0)} />
-          <Tab label="Scorecard" {...a11yProps(1)} />
+          <Tab
+            className={classes.backColor}
+            style={{ color: "#ffffff" }}
+            label="Live Score"
+            {...a11yProps(0)}
+          />
+          <Tab
+            className={classes.backColor}
+            style={{ color: "#ffffff" }}
+            label="Scorecard"
+            {...a11yProps(1)}
+          />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -129,16 +147,18 @@ export default function LiveScore() {
         {/*///////////////////////////////////////////////////////               Live Score Card */}
 
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Card className={classes.liveScoreCardStyle}>
+          <Card elevation={0} className={classes.liveScoreCardStyle}>
             <Typography style={{ fontSize: "0.8em", fontWeight: 600 }}>
               Match has not started
             </Typography>
-            <Typography style={{ fontSize: "0.7em", fontWeight: 600 }}>
+            <Typography
+              style={{ fontSize: "0.7em", fontWeight: 600, marginBottom: 5 }}
+            >
               Starts at 12:30 IST
             </Typography>
 
             <div className={classes.lveImgCard}>
-              <Card className={classes.liveScoreCard}>
+              <Card elevation={0} className={classes.liveScoreCard}>
                 <Typography className={classes.justifyCenter}>
                   Countdown
                 </Typography>
@@ -170,6 +190,7 @@ export default function LiveScore() {
                 </Typography>
               </Grid>
             </Grid>
+            <Card elevation={0} className={classes.scoreCardStyle}></Card>
           </Card>
         </TabPanel>
       </SwipeableViews>

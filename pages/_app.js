@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
     palette: {
       type: darkMode ? "dark" : "light",
       primary: {
-        main: "#6a6c6e", // Grey ( Header )
+        main: "#1c1f1d", // Grey ( Header )
         light: "#404040", // Dark Grey
         background: "#2d6948", // Green color
         grey: "#284d38", //dark green

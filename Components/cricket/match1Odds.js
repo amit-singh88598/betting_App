@@ -12,14 +12,18 @@ import {
   Card,
   FormControlLabel,
   Grid,
-  IconButton,
-  Paper,
   Switch,
   TextField,
 } from "@material-ui/core";
-import { Height } from "@material-ui/icons";
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  btnStyle: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
+    width: 100,
+    float: "right",
+  },
+}));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -69,40 +73,6 @@ export default function Match1Odds() {
 
   return (
     <div>
-      {/* <div
-        style={{
-          marginTop: 10,
-          display: "flex",
-          padding: 5,
-        }}
-      >
-        <Typography
-          style={{
-            fontWeight: 600,
-            fontSize: "0.9em",
-          }}
-        >
-          Match Odds
-        </Typography>
-        <div
-          style={{
-            marginLeft: "auto",
-          }}
-        >
-          <div style={{ display: "flex" }}>
-            <Typography
-              style={{ marginRight: 70, fontWeight: 600, fontSize: "0.9em" }}
-            >
-              Back
-            </Typography>
-            <Typography
-              style={{ marginRight: 30, fontWeight: 600, fontSize: "0.9em" }}
-            >
-              Lay
-            </Typography>
-          </div>
-        </div>
-      </div> */}
       <AppBar position="static" color="default">
         <Grid container spacing={3}>
           <Grid item xs={4} sm={4}>
@@ -239,9 +209,28 @@ export default function Match1Odds() {
               </Button>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <Button fullWidth variant="contained" color="primary">
-                Place Bet
-              </Button>
+              <Card className={classes.btnStyle}>
+                <Typography
+                  style={{
+                    fontSize: "0.8em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Place Bet
+                </Typography>
+                <Typography
+                  style={{
+                    fontSize: "0.7em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Profit : 0.00
+                </Typography>
+              </Card>
             </Grid>
           </Grid>
           <div style={{ display: "flex" }}>
@@ -336,9 +325,28 @@ export default function Match1Odds() {
               </Button>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <Button fullWidth variant="contained" color="primary">
-                Place Bet
-              </Button>
+              <Card className={classes.btnStyle}>
+                <Typography
+                  style={{
+                    fontSize: "0.8em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Place Bet
+                </Typography>
+                <Typography
+                  style={{
+                    fontSize: "0.7em",
+                    fontWeight: 600,
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  Liability : 0.00
+                </Typography>
+              </Card>
             </Grid>
           </Grid>
           <div style={{ display: "flex" }}>

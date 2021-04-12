@@ -40,6 +40,7 @@ function CricketLive(props) {
           </Typography>
         </div>
       </Card>
+
       <CricketNavItem />
 
       <LiveScoreCard />
@@ -66,115 +67,19 @@ function CricketLive(props) {
         >
           <div style={{ display: "flex" }}>
             <Typography
-              style={{ marginRight: 70, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 75, fontWeight: 600, fontSize: "0.9em" }}
             >
-              Back
+              BACK
             </Typography>
             <Typography
-              style={{ marginRight: 30, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 35, fontWeight: 600, fontSize: "0.9em" }}
             >
-              Lay
+              LAY
             </Typography>
           </div>
         </div>
       </div>
       <div>
-        {/* <Card
-          elevation={4}
-          style={{
-            marginBottom: 5,
-          }}
-        >
-          <div>
-            <div
-              style={{
-                margin: 5,
-                display: "flex",
-              }}
-            >
-              <Typography
-                style={{
-                  fontWeight: 600,
-                  fontSize: "0.8em",
-                }}
-              >
-                Chennai Supar King
-              </Typography>
-
-              <div
-                style={{
-                  marginLeft: "auto",
-                }}
-              >
-                <div style={{ display: "flex" }}>
-                  <Card
-                    style={{
-                      marginRight: 2,
-                      backgroundColor: "#91e5fa",
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                    }}
-                  >
-                    2.21
-                  </Card>
-                  <Card
-                    style={{
-                      backgroundColor: "#f582b0",
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                    }}
-                  >
-                    2.54
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card> */}
-        {/* <Card elevation={4}>
-          <div
-            style={{
-              margin: 5,
-              display: "flex",
-            }}
-          >
-            <Typography
-              style={{
-                fontWeight: 600,
-                fontSize: "0.8em",
-              }}
-            >
-              Delhi Capitals
-            </Typography>
-            <div
-              style={{
-                marginLeft: "auto",
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <Card
-                  style={{
-                    marginRight: 2,
-                    backgroundColor: "#91e5fa",
-                    paddingLeft: 10,
-                    paddingRight: 10,
-                  }}
-                >
-                  2.21
-                </Card>
-                <Card
-                  style={{
-                    backgroundColor: "#f582b0",
-                    paddingLeft: 10,
-                    paddingRight: 10,
-                  }}
-                >
-                  2.54
-                </Card>
-              </div>
-            </div>
-          </div>
-        </Card> */}
         <Card style={{ marginTop: 10 }}>
           <Match1Odds />
           <Match2Odds />

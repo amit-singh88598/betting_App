@@ -12,6 +12,8 @@ import { Visibility } from "@material-ui/icons";
 import { useRouter } from "next/router";
 import React from "react";
 import CricketNavItem from "./cricketNavItem";
+import Match1Odds from "./match1Odds";
+import Match2Odds from "./match2Odds";
 
 const useStyle = makeStyles((theme) => ({
   cardStyle: {
@@ -51,6 +53,7 @@ function CricketMarket(props) {
         style={{
           marginTop: 10,
           display: "flex",
+          marginBottom: 5,
         }}
       >
         <Typography
@@ -68,116 +71,20 @@ function CricketMarket(props) {
         >
           <div style={{ display: "flex" }}>
             <Typography
-              style={{ marginRight: 20, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 75, fontWeight: 600, fontSize: "0.9em" }}
             >
-              Back
+              BACK
             </Typography>
             <Typography
-              style={{ marginRight: 15, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 35, fontWeight: 600, fontSize: "0.9em" }}
             >
-              Lay
+              LAY
             </Typography>
           </div>
         </div>
       </div>
-      <div>
-        <Card
-          elevation={4}
-          style={{
-            marginBottom: 5,
-          }}
-        >
-          <div>
-            <div
-              style={{
-                margin: 5,
-                display: "flex",
-              }}
-            >
-              <Typography
-                style={{
-                  fontWeight: 600,
-                  fontSize: "0.8em",
-                }}
-              >
-                Chennai Supar King
-              </Typography>
-
-              <div
-                style={{
-                  marginLeft: "auto",
-                }}
-              >
-                <div style={{ display: "flex" }}>
-                  <Card
-                    style={{
-                      marginRight: 2,
-                      backgroundColor: "#91e5fa",
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                    }}
-                  >
-                    2.21
-                  </Card>
-                  <Card
-                    style={{
-                      backgroundColor: "#f582b0",
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                    }}
-                  >
-                    2.54
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card>
-        <Card elevation={4}>
-          <div
-            style={{
-              margin: 5,
-              display: "flex",
-            }}
-          >
-            <Typography
-              style={{
-                fontWeight: 600,
-                fontSize: "0.8em",
-              }}
-            >
-              Delhi Capitals
-            </Typography>
-            <div
-              style={{
-                marginLeft: "auto",
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <Card
-                  style={{
-                    marginRight: 2,
-                    backgroundColor: "#91e5fa",
-                    paddingLeft: 10,
-                    paddingRight: 10,
-                  }}
-                >
-                  2.21
-                </Card>
-                <Card
-                  style={{
-                    backgroundColor: "#f582b0",
-                    paddingLeft: 10,
-                    paddingRight: 10,
-                  }}
-                >
-                  2.54
-                </Card>
-              </div>
-            </div>
-          </div>
-        </Card>
-      </div>
+      <Match1Odds />
+      <Match2Odds />
       <div className={classes.fab}>
         <Avatar elevation={4} onClick={() => router.push("/Cricket/myMarkets")}>
           <Visibility />
