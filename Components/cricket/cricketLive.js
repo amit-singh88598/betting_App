@@ -3,6 +3,9 @@ import { Visibility } from "@material-ui/icons";
 import { useRouter } from "next/router";
 import React from "react";
 import CricketNavItem from "./cricketNavItem";
+import LiveScoreCard from "./liveScoreCard";
+import Match1Odds from "./match1Odds";
+import Match2Odds from "./match2Odds";
 
 const useStyle = makeStyles((theme) => ({
   cardStyle: {
@@ -38,6 +41,9 @@ function CricketLive(props) {
         </div>
       </Card>
       <CricketNavItem />
+
+      <LiveScoreCard />
+
       <div
         style={{
           marginTop: 10,
@@ -48,6 +54,7 @@ function CricketLive(props) {
           style={{
             fontWeight: 600,
             fontSize: "0.9em",
+            marginLeft: 5,
           }}
         >
           Match Odds
@@ -59,12 +66,12 @@ function CricketLive(props) {
         >
           <div style={{ display: "flex" }}>
             <Typography
-              style={{ marginRight: 20, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 70, fontWeight: 600, fontSize: "0.9em" }}
             >
               Back
             </Typography>
             <Typography
-              style={{ marginRight: 15, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 30, fontWeight: 600, fontSize: "0.9em" }}
             >
               Lay
             </Typography>
@@ -72,7 +79,7 @@ function CricketLive(props) {
         </div>
       </div>
       <div>
-        <Card
+        {/* <Card
           elevation={4}
           style={{
             marginBottom: 5,
@@ -123,8 +130,8 @@ function CricketLive(props) {
               </div>
             </div>
           </div>
-        </Card>
-        <Card elevation={4}>
+        </Card> */}
+        {/* <Card elevation={4}>
           <div
             style={{
               margin: 5,
@@ -167,6 +174,10 @@ function CricketLive(props) {
               </div>
             </div>
           </div>
+        </Card> */}
+        <Card style={{ marginTop: 10 }}>
+          <Match1Odds />
+          <Match2Odds />
         </Card>
       </div>
       <div className={classes.fab}>

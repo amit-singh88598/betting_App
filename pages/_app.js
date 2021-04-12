@@ -15,7 +15,7 @@ import { useState } from "react";
 const useStyles = makeStyles((theme) => ({
   root: {
     [theme.breakpoints.down("sm")]: {
-      height: "100vh",
+      height: "100%",
       backgroundImage: 'url("/wall.jpg")',
       backgroundPosition: "center",
       backgroundSize: "cover",
@@ -45,14 +45,14 @@ function MyApp({ Component, pageProps }) {
       primary: {
         main: "#6a6c6e", // Grey ( Header )
         light: "#404040", // Dark Grey
-        background: "#9c0609", // Blue
-        grey: "#edeff2", //Light Grey
+        background: "#2d6948", // Green color
+        grey: "#284d38", //dark green
       },
       secondary: {
         main: "#ffffff", // White
         light: "#656565", // Green Color
         grey: "#403e3e", // darkGrey
-        background: "#dfe4eb", //Light Grey
+        background: "#000000", //Light Grey
       },
     },
     typography: {
