@@ -1,13 +1,13 @@
 import React from "react";
 import CricketLive from "../../Components/cricket/cricketLive";
-import Header from "../../Layouts/header";
+import MobHeader from "../../Layouts/mobHeader";
 
 function Live(props) {
   return (
     <div>
-      <Header>
+      <MobHeader>
         <CricketLive />
-      </Header>
+      </MobHeader>
     </div>
   );
 }

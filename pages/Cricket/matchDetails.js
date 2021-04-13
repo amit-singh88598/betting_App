@@ -1,13 +1,13 @@
 import React from "react";
 import MatchDetail from "../../Components/cricket/matchDetail";
-import Header from "../../Layouts/header";
+import MobHeader from "../../Layouts/mobHeader";
 
 function MatchDetails(props) {
   return (
     <div>
-      <Header>
+      <MobHeader>
         <MatchDetail />
-      </Header>
+      </MobHeader>
     </div>
   );
 }

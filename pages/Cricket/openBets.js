@@ -1,13 +1,13 @@
 import React from "react";
 import CricketOpenBets from "../../Components/cricket/cricketOpenBets";
-import Header from "../../Layouts/header";
+import MobHeader from "../../Layouts/mobHeader";
 
 function OpenBets(props) {
   return (
     <div>
-      <Header>
+      <MobHeader>
         <CricketOpenBets />
-      </Header>
+      </MobHeader>
     </div>
   );
 }

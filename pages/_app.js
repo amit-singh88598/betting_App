@@ -50,7 +50,7 @@ function MyApp({ Component, pageProps }) {
       },
       secondary: {
         main: "#ffffff", // White
-        light: "#656565", // Green Color
+        light: "#ffd76e", // Golden Color
         grey: "#403e3e", // darkGrey
         background: "#000000", //Light Grey
       },

@@ -76,40 +76,6 @@ export default function Match2Odds() {
 
   return (
     <div>
-      {/* <div
-        style={{
-          marginTop: 10,
-          display: "flex",
-          padding: 5,
-        }}
-      >
-        <Typography
-          style={{
-            fontWeight: 600,
-            fontSize: "0.9em",
-          }}
-        >
-          Match Odds
-        </Typography>
-        <div
-          style={{
-            marginLeft: "auto",
-          }}
-        >
-          <div style={{ display: "flex" }}>
-            <Typography
-              style={{ marginRight: 70, fontWeight: 600, fontSize: "0.9em" }}
-            >
-              Back
-            </Typography>
-            <Typography
-              style={{ marginRight: 30, fontWeight: 600, fontSize: "0.9em" }}
-            >
-              Lay
-            </Typography>
-          </div>
-        </div>
-      </div> */}
       <AppBar position="static" color="default">
         <Grid container spacing={3}>
           <Grid item xs={4} sm={4}>
@@ -204,7 +170,15 @@ export default function Match2Odds() {
               >
                 STAKE
               </Typography>
-              <TextField id="outlined-basic" size="small" variant="outlined" />
+              <TextField
+                id="outlined-number"
+                size="small"
+                type="number"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                variant="outlined"
+              />
             </Grid>
           </Grid>
           <Grid container spacing={3}>
@@ -324,6 +298,9 @@ export default function Match2Odds() {
                 id="outlined-number"
                 size="small"
                 type="number"
+                InputLabelProps={{
+                  shrink: true,
+                }}
                 variant="outlined"
               />
             </Grid>

@@ -1,13 +1,13 @@
 import React from "react";
 import CricketMarket from "../../Components/cricket/cricketMarket";
-import Header from "../../Layouts/header";
+import MobHeader from "../../Layouts/mobHeader";
 
 function Market(props) {
   return (
     <div>
-      <Header>
+      <MobHeader>
         <CricketMarket />
-      </Header>
+      </MobHeader>
     </div>
   );
 }

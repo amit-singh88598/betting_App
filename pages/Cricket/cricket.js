@@ -1,14 +1,14 @@
 import { Container, Typography } from "@material-ui/core";
 import React from "react";
 import LiveSeries from "../../Components/cricket/liveSeries";
-import Header from "../../Layouts/header";
+import MobHeader from "../../Layouts/mobHeader";
 
 function Cricket(props) {
   return (
     <div>
-      <Header>
+      <MobHeader>
         <LiveSeries />
-      </Header>
+      </MobHeader>
     </div>
   );
 }

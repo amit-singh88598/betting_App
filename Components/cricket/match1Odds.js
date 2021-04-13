@@ -167,7 +167,15 @@ export default function Match1Odds() {
               >
                 STAKE
               </Typography>
-              <TextField id="outlined-basic" size="small" variant="outlined" />
+              <TextField
+                id="outlined-number"
+                size="small"
+                type="number"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                variant="outlined"
+              />
             </Grid>
           </Grid>
           <Grid container spacing={3}>
@@ -283,7 +291,15 @@ export default function Match1Odds() {
               >
                 STAKE
               </Typography>
-              <TextField id="outlined-basic" size="small" variant="outlined" />
+              <TextField
+                id="outlined-number"
+                size="small"
+                type="number"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                variant="outlined"
+              />
             </Grid>
           </Grid>
           <Grid container spacing={3}>

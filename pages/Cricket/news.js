@@ -1,13 +1,13 @@
 import React from "react";
 import CricketNews from "../../Components/cricket/cricketNews";
-import Header from "../../Layouts/header";
+import MobHeader from "../../Layouts/mobHeader";
 
 function News(props) {
   return (
     <div>
-      <Header>
+      <MobHeader>
         <CricketNews />
-      </Header>
+      </MobHeader>
     </div>
   );
 }

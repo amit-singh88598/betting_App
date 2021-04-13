@@ -6,6 +6,7 @@ const useStyle = makeStyles((theme) => ({
   cardStyle: {
     backgroundColor: theme.palette.secondary.background,
     marginTop: 10,
+    marginBottom: 2,
   },
   linkStyle: {
     fontSize: "0.8em",

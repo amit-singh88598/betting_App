@@ -153,7 +153,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Header(props) {
+export default function MobHeader(props) {
   const classes = useStyles();
   const theme = useTheme();
   const router = useRouter();

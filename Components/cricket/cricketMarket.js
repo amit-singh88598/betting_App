@@ -6,6 +6,7 @@ import {
   IconButton,
   Link,
   makeStyles,
+  Paper,
   Typography,
 } from "@material-ui/core";
 import { Visibility } from "@material-ui/icons";
@@ -15,7 +16,24 @@ import CricketNavItem from "./cricketNavItem";
 import Match1Odds from "./match1Odds";
 import Match2Odds from "./match2Odds";
 
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 const useStyle = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular,
+  },
+  headingStyle: {
+    marginTop: 10,
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
+  },
   cardStyle: {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.secondary.main,
@@ -83,8 +101,52 @@ function CricketMarket(props) {
           </div>
         </div>
       </div>
-      <Match1Odds />
-      <Match2Odds />
+      <div className={classes.root}>
+        <Accordion>
+          <Paper className={classes.headingStyle}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon style={{ color: "#ffffff" }} />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>
+                Chennai Super King
+              </Typography>
+              <Typography
+                style={{ marginLeft: "auto", marginRight: 10 }}
+                className={classes.heading}
+              >
+                0.00
+              </Typography>
+            </AccordionSummary>
+          </Paper>
+          <AccordionDetails>
+            <Match1Odds />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <Paper className={classes.headingStyle}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon style={{ color: "#ffffff" }} />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <Typography className={classes.heading}>
+                Delhi Capitals
+              </Typography>
+              <Typography
+                style={{ marginLeft: "auto", marginRight: 10 }}
+                className={classes.heading}
+              >
+                0.00
+              </Typography>
+            </AccordionSummary>
+          </Paper>
+          <AccordionDetails>
+            <Match2Odds />
+          </AccordionDetails>
+        </Accordion>
+      </div>
       <div className={classes.fab}>
         <Avatar elevation={4} onClick={() => router.push("/Cricket/myMarkets")}>
           <Visibility />
