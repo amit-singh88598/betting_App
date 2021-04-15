@@ -12,6 +12,7 @@ import MostPopular from "../Components/mostPopular";
 import DesktopHeader from "../Layouts/desktopHeader";
 import DesktopSideBar from "../Layouts/desktopSideBar";
 import MobHeader from "../Layouts/mobHeader";
+import RightSideBar from "../Layouts/rightSideBar";
 import styles from "../styles/Home.module.css";
 
 const useStyle = makeStyles((theme) => ({
@@ -56,11 +57,11 @@ export default function Home() {
             <Grid item xs={12} sm={2}>
               <DesktopSideBar />
             </Grid>
-            <Grid item xs={12} sm={7}>
+            <Grid item xs={12} sm={8}>
               <RecentMatch />
             </Grid>
-            <Grid item xs={12} sm={3}>
-              <Paper className={classes.paper}>xs=12 sm=6</Paper>
+            <Grid item xs={12} sm={2}>
+              <RightSideBar />
             </Grid>
           </Grid>
         </Container>
