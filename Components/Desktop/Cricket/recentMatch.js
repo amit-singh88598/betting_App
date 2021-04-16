@@ -68,17 +68,17 @@ function RecentMatch(props) {
         >
           <div style={{ display: "flex" }}>
             <Typography
-              style={{ marginRight: 95, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 80, fontWeight: 600, fontSize: "0.9em" }}
             >
               1
             </Typography>
             <Typography
-              style={{ marginRight: 90, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 75, fontWeight: 600, fontSize: "0.9em" }}
             >
               X
             </Typography>
             <Typography
-              style={{ marginRight: 50, fontWeight: 600, fontSize: "0.9em" }}
+              style={{ marginRight: 45, fontWeight: 600, fontSize: "0.9em" }}
             >
               2
             </Typography>

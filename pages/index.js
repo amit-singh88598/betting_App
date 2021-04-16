@@ -1,19 +1,13 @@
-import {
-  Container,
-  Grid,
-  makeStyles,
-  Paper,
-  Typography,
-} from "@material-ui/core";
+import { Container, Grid, makeStyles } from "@material-ui/core";
 import Head from "next/head";
 import RecentMatch from "../Components/Desktop/Cricket/recentMatch";
 import InPlay from "../Components/inPlay";
 import MostPopular from "../Components/mostPopular";
+import DesktopFooter from "../Layouts/desktopFooter";
 import DesktopHeader from "../Layouts/desktopHeader";
 import DesktopSideBar from "../Layouts/desktopSideBar";
 import MobHeader from "../Layouts/mobHeader";
 import RightSideBar from "../Layouts/rightSideBar";
-import styles from "../styles/Home.module.css";
 
 const useStyle = makeStyles((theme) => ({
   mobView: {
@@ -57,14 +51,15 @@ export default function Home() {
             <Grid item xs={12} sm={2}>
               <DesktopSideBar />
             </Grid>
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} sm={7}>
               <RecentMatch />
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={12} sm={3}>
               <RightSideBar />
             </Grid>
           </Grid>
         </Container>
+        <DesktopFooter />
       </div>
     </div>
   );

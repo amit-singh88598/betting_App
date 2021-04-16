@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: "100vh",
-    backgroundImage: 'url("/wall.jpg")',
+    backgroundImage: 'url("/wall3.jpg")',
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
-      backgroundImage: 'url("/wall.jpg")',
+      backgroundImage: 'url("/wall3.jpg")',
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",

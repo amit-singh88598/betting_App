@@ -1,11 +1,4 @@
-import {
-  Avatar,
-  Card,
-  Link,
-  makeStyles,
-  Paper,
-  Typography,
-} from "@material-ui/core";
+import { Avatar, Card, makeStyles, Paper, Typography } from "@material-ui/core";
 import { Visibility } from "@material-ui/icons";
 import { useRouter } from "next/router";
 import React from "react";
@@ -13,7 +6,6 @@ import CricketNavItem from "./cricketNavItem";
 import LiveScoreCard from "./liveScoreCard";
 import Match1Odds from "./match1Odds";
 import Match2Odds from "./match2Odds";
-
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
@@ -105,7 +97,6 @@ function CricketLive(props) {
         </div>
       </div>
       <div>
-        {/* <Card style={{ marginTop: 10 }}> */}
         <div className={classes.root}>
           <Accordion>
             <Paper className={classes.headingStyle}>
@@ -152,7 +143,6 @@ function CricketLive(props) {
             </AccordionDetails>
           </Accordion>
         </div>
-        {/* </Card> */}
       </div>
       <div className={classes.fab}>
         <Avatar elevation={4} onClick={() => router.push("/Cricket/myMarkets")}>
