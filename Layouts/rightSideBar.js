@@ -72,38 +72,6 @@ export default function RightSideBar() {
           <Typography>You have no unmatch bets.</Typography>
         </AccordionDetails>
       </Accordion>
-      {/* <Accordion className={classes.root}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon style={{ color: "#ffffff" }} />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>
-            Available Credit :
-          </Typography>
-          <Typography
-            style={{ marginLeft: "auto" }}
-            className={classes.heading}
-          >
-            81.60
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className={classes.heading}>
-            Credit limit: 5,000.00
-          </Typography>
-        </AccordionDetails>
-        <AccordionDetails>
-          <Typography className={classes.heading}>
-            Winnings: -4,918.40
-          </Typography>
-        </AccordionDetails>
-        <AccordionDetails>
-          <Typography className={classes.heading}>
-            Total Net Exposure: 0.00
-          </Typography>
-        </AccordionDetails>
-      </Accordion> */}
       <Switch
         checked={state.checkedA}
         onChange={handleChange}

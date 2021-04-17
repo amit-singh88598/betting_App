@@ -45,7 +45,7 @@ function RecentMatch(props) {
   return (
     <div style={{ padding: 20 }}>
       <Typography style={{ fontSize: "1.6em" }}>Cricket</Typography>
-      <Divider />
+      <Divider style={{ marginBottom: 10, height: 2 }} />
       <div
         style={{
           marginTop: 10,

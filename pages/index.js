@@ -27,9 +27,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Betting</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* Mobile View Starts here */}
+
       <div className={classes.mobView}>
         <MobHeader>
           <div>
@@ -44,6 +47,11 @@ export default function Home() {
           </div>
         </MobHeader>
       </div>
+
+      {/* Mobile View End here */}
+
+      {/* Desktop View Starts here */}
+
       <div className={classes.desktopView}>
         <DesktopHeader />
         <Container>
@@ -61,6 +69,8 @@ export default function Home() {
         </Container>
         <DesktopFooter />
       </div>
+
+      {/* Desktop View End here */}
     </div>
   );
 }
